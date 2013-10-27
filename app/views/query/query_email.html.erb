@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>New Happenly.com query</h1>
+    <table>
+      <tr>
+        <th>Name</th>
+        <td><%=@input[:full_name] %></td>
+      </tr>
+      <tr>
+        <th>Email</th>
+        <td><%==@input[:email] %></td>
+      </tr>
+      <tr>
+        <th>Price</th>
+        <td><%==@input[:price] %></td>
+      </tr>
+      <tr>
+        <th>Message</th>
+        <td><%==@input[:message] %></td>
+      </tr>
+    </table>
+    <h2>Thank you!!</h2>
+  </body>
+</html>

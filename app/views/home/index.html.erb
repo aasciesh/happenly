@@ -1,0 +1,19 @@
+<div id="main">
+	<div><%= @message %></div>
+	<div id="banner">
+	</div>
+	<div id="contact_form">
+		<h3>Let us know, if you are interested.</h3>
+		<%= form_for :query, url: '/query' do |f| %>
+			<%= f.label 'Full Name' %><br>
+			<%= f.text_field :full_name %><br><br>
+			<%= f.label 'Email' %><br>
+			<%= f.text_field :email %><br><br>
+			<%= f.label 'Price Offer' %><br>
+			<%= f.text_field :price %><br><br>
+			<%= f.label 'Message' %><br>
+			<%= f.text_area :message %><br><br>
+			<%= f.submit "Submit" %>
+		<% end %>
+	</div>
+</div>

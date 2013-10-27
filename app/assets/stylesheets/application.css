@@ -1,0 +1,72 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+body {
+    color: #333333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+	background-color: #120612;
+}
+#main{
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	color: rgb(124, 116, 150);
+text-align: center;
+font-weight: bold;
+}
+#banner{
+	background-image: url(/assets/banner.jpg);
+	width: 900px;
+	height: 440px;
+}
+input[type="submit"]:hover {
+background-color: rgba(255, 255, 255, 0.19);
+cursor: pointer;
+}
+input[type="submit"] {
+height: 35px;
+border-radius: 3px;
+background-color: rgba(255, 255, 255, 0.12);
+border: 1px solid rgb(100, 94, 109);
+line-height: 25px;
+font-size: 20px;
+color: rgb(114, 108, 119);
+outline: none;}
+
+input[type="text"]
+{
+height: 26px;
+border-radius: 3px;
+background-color: rgba(255, 255, 255, 0.12);
+	border: 1px solid rgb(100, 94, 109);
+	line-height: 25px;
+	font-size: 20px;
+	color: rgb(114, 108, 119);
+	padding: 4px;
+	width: 300px;
+	outline: none;
+}
+textarea{
+	height: 150px;
+	outline: none;
+	border-radius: 3px;
+	background-color: rgba(255, 255, 255, 0.12);
+	border: 1px solid rgb(100, 94, 109);
+	line-height: 20px;
+	font-size: 16px;
+	color: rgb(114, 108, 119);
+	padding: 4px;
+	width: 300px;
+}
