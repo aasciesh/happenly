@@ -6,6 +6,8 @@ Happenly::Application.routes.draw do
   root 'home#index'
 
   post 'query' => 'home#query'
+  
+  get 'error' => 'home#error'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
