@@ -12,7 +12,7 @@ class HomeController < ApplicationController
 		render 'index'
  	end
 	def error
-		Query.error(params).deliver
+		Query.error(request.headers).deliver
 		render 'index'
 	end
  	private
